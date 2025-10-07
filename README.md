@@ -95,7 +95,7 @@ In GitHub repository:
 Go to Settings → Webhooks → Add Webhook
 
 Payload URL:
-http://jenkins-public-ip:8080/github-webhook/
+http://{jenkins-public-ip:8080}/github-webhook/
 Content type: application/json
 Select: Just the push event
 
@@ -126,6 +126,7 @@ This automatically triggers the Jenkins pipeline via webhook.
 ### ✅ Verify Deployment
 After pipeline success, open:
 http://{node-server-public-ip}:3000
+
 📸 Screenshot: Node.js app running in browser
 ![App Running](Images/NodeApp.PNG)
 
